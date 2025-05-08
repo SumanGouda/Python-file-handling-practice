@@ -22,10 +22,6 @@ with open (filename,"w") as f:
         if i != line_to_remove:
             f.write (line)
 
-    # for idx,line in lines:
-    #     if .strip() != line_to_remove.strip():
-    #         f.write(line)
-            
 with open (filename,"r") as f:
     lines = f.readlines()
     for idx, line in enumerate(lines, start=1):
