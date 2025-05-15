@@ -1,17 +1,4 @@
 filename = "user_input.txt"
-
-with open(filename, "w") as file:
-    print("Enter text (type 'STOP' on a new line to finish):")
-    while True:
-        line = input()
-        if line.strip().upper() == "STOP":
-            break
-        file.write(line + "\n")
-
-print(f"Data written to {filename}")
-
-
-filename = "user_input.txt"
 filename1 = "user_input_replaced.txt"
 
 with open (filename,"w") as file:
